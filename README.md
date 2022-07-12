@@ -52,3 +52,23 @@ SingleLayerPerceptron for letter classification
 ```
 1 
 ![Screenshot](pictures/letters_damaged_by_5.png)
+
+# 15 % damaged letters
+
+```python
+  net.show(X_15)
+  net.predict(X_15)
+  net.misclassified(X_15,y)
+```
+1 
+![Screenshot](pictures/letters_damaged_by_15.png)
+
+# 40 % damaged letters
+
+```python
+  net.show(X_40)
+  net.predict(X_40)
+  net.misclassified(X_40,y)
+```
+1 
+![Screenshot](pictures/letters_damaged_by_40.png)
