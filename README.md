@@ -14,3 +14,12 @@ SingleLayerPerceptron for letter classification
   X = df.iloc[my_letters,:35].values
 ```
 ![Screenshot](pictures/letters.png)
+
+# We then create an object of class SLP and match it and check the number of missclassifications
+
+```python
+  net = SLP()
+  net.fit(X,y)
+  net.predict(X)
+```
+#
