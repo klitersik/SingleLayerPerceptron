@@ -77,4 +77,4 @@ Misclassified           |  Damaged letters
 :-------------------------:|:-------------------------:
 40  |  ![Screenshot](pictures/letters_damaged_by_40.png)
 
-# If you would like to classify more letters then you need to increase the response matrix **y** 
+# If you would like to classify more letters then you need to increase the response matrix **y**. 
