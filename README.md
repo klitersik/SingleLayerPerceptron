@@ -13,3 +13,4 @@ SingleLayerPerceptron for letter classification
   my_letters = [2,3,5,8,10,11,12,16,23,25]
   X = df.iloc[my_letters,:35].values
 ```
+![Screenshot](pictures/letters.png)
