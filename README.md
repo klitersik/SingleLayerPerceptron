@@ -15,7 +15,7 @@ SingleLayerPerceptron for letter classification
 ```
 ![Screenshot](pictures/letters.png)
 
-# We then create an object of class SLP and match it and check the number of missclassifications
+# We then create an object of class SLP and match it
 
 ```python
   net = SLP()
@@ -76,3 +76,5 @@ Misclassified           |  Damaged letters
 Misclassified           |  Damaged letters
 :-------------------------:|:-------------------------:
 40  |  ![Screenshot](pictures/letters_damaged_by_40.png)
+
+# If you would like to classify more letters then you need to increase the response matrix **y** 
