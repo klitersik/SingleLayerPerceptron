@@ -50,4 +50,5 @@ SingleLayerPerceptron for letter classification
   net.predict(X_5)
   net.misclassified(X_5,y)
 ```
-1 ![Screenshot](pictures/letters_damaged_by_5.png)
+1 
+![Screenshot](pictures/letters_damaged_by_5.png)
