@@ -43,10 +43,11 @@ SingleLayerPerceptron for letter classification
   X_15 = damage(X,15)
   X_40 = damage(X,40)
 ```
+# 5 % damaged letters
 
 ```python
   net.show(X_5)
   net.predict(X_5)
   net.misclassified(X_5,y)
 ```
-1 
+1 ![Screenshot](pictures/letters_damaged_by_5.png)
