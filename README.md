@@ -1,2 +1,2 @@
 # SingleLayerPerceptron with sklearn
-SingleLayerPerceptron for letter recognition
+SingleLayerPerceptron for letter classification
