@@ -1,8 +1,8 @@
-## SingleLayerPerceptron with sklearn
+# SingleLayerPerceptron with sklearn
 
 SingleLayerPerceptron for letter classification
 
-# The first thing we need to do is upload the file with our letters.data, and pick 10 letters we want
+## The first thing we need to do is upload the file with our letters.data, and pick 10 letters we want
 
 ```python
   from google.colab import files
@@ -15,7 +15,7 @@ SingleLayerPerceptron for letter classification
 ```
 ![Screenshot](pictures/letters.png)
 
-# we create a response matrix y
+## we create a response matrix y
 
 ```python
   y = [[1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
@@ -30,14 +30,14 @@ SingleLayerPerceptron for letter classification
        [-1,-1,-1,-1,-1,-1,-1,-1,-1,1],]
 ```
 
-# We then create an object of class SLP and match it
+## We then create an object of class SLP and match it
 
 ```python
   net = SLP()
   net.fit(X,y)
   net.predict(X)
 ```
-# We define a damge function that corrupts a percentage of our letters
+## We define a damge function that corrupts a percentage of our letters
 
 ```python
   def damage(X,percent,seed=1):
@@ -51,14 +51,14 @@ SingleLayerPerceptron for letter classification
     return result
 ```
 
-# We then repeat the classifications on letters that are damaged to varying degrees, and write out the number of misclassifications
+## We then repeat the classifications on letters that are damaged to varying degrees, and write out the number of misclassifications
 
 ```python
   X_5 = damage(X,5)
   X_15 = damage(X,15)
   X_40 = damage(X,40)
 ```
-# 5 % damaged letters
+## 5 % damaged letters
 
 ```python
   net.show(X_5)
@@ -70,7 +70,7 @@ Misclassified           |  Damaged letters
 1  |  ![Screenshot](pictures/letters_damaged_by_5.png)
 
 
-# 15 % damaged letters
+## 15 % damaged letters
 
 ```python
   net.show(X_15)
@@ -81,7 +81,7 @@ Misclassified           |  Damaged letters
 :-------------------------:|:-------------------------:
 4  |  ![Screenshot](pictures/letters_damaged_by_15.png)
 
-# 40 % damaged letters
+## 40 % damaged letters
 
 ```python
   net.show(X_40)
@@ -92,4 +92,4 @@ Misclassified           |  Damaged letters
 :-------------------------:|:-------------------------:
 40  |  ![Screenshot](pictures/letters_damaged_by_40.png)
 
-# If you would like to classify more letters then you need to increase the response matrix **y**. 
+## If you would like to classify more letters then you need to increase the response matrix **y**. 
